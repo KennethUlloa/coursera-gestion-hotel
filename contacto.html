@@ -17,10 +17,10 @@
         <div class="navbar-collapse collapse" id="navHeaderCollapse">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link active">Nosotros</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -32,14 +32,61 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Consequuntur temporibus quia atque quis, molestias soluta sequi modi adipisci. 
-        Veniam optio fugit facere porro beatae nobis suscipit odio hic, quae error.
-        </span>
+        <h1>Déjame un comentario</h1>
+        <form action="" class="form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Ingrese su apellido" class="form-control">
+                </div>
+                <div class="col mt-2">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ingrese su email" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-6">
+                    <label>Domicilio</label>
+                    <input type="address" placeholder="Ingrese su domicilio" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Provincia</label>
+                    <select class="form-select">
+                        <option>Pichincha</option>
+                        <option>Esmeraldas</option>
+                        <option>Orellana</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <label >Comentario</label>
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <div class="form-check">
+                        <label class="form-check-label">Quiero que me contacten</label>
+                        <input type="checkbox" class="form-check-input">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <input type="submit" class="btn btn-outline-primary" value="Enviar">
+                </div>
+            </div>
+        </form>
     </div>
     <footer>
         <div class="d-flex p-2">
