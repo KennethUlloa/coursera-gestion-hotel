@@ -1,0 +1,20 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de node js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenneth Ulloa",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "popper.js": "^1.16.1"
+  }
+}
