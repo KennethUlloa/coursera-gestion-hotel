@@ -9,11 +9,31 @@
     <title>Página de inicio</title>
 </head>
 <body>
-    <h1 class=" jumbotron p-5  w-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top p-2">
+        <a href="" class="navbar-brand">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHeaderCollapse" aria-controls="#navHeaderCollapse"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navHeaderCollapse">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class=" jumbotron p-5 w-100">
         Hoteles
     </h1>
 
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Hoteles</li>
+            </ol>
+        </nav>
         <div class="d-flex">
             <div class="col-sm-4">
                 <h3>¿Cómo funciona?</h3>
@@ -105,7 +125,7 @@
         </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <!--script src="node_modules/popper.js/dist/popper.min.js"--></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
