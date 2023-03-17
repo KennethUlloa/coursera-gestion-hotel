@@ -115,7 +115,7 @@
                     <h4 class="card-title">Hotel Madrid</h4>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"></span> Reservar</button>
+                <button class="btn btn-primary btn-reserva" data-bs-toggle="popover" data-bs-content="Consulta las promociones vigentes" title="Promociones"><span class="oi oi-bookmark"></span> Reservar</button>
             </div>
             <div class="card card-hotel p-0 m-2">
                 <img src="https://picsum.photos/id/78/200/200" class="card-img-top" alt="">
@@ -186,6 +186,7 @@
     <script>
         $(function() {
             $('[data-bs-toggle="tooltip"]').tooltip();
+            $('[data-bs-toggle="popover"]').popover();
         })
     </script>
 </body>
