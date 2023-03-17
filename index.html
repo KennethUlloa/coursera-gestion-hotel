@@ -40,16 +40,27 @@
             <strong>¡Temporada de playa!</strong> Aprovecha las ofertas especiales disponibles en diferentes destinos.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="d-flex">
+        <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="funciona1">¿Cómo funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reservar" aria-expanded="false" aria-controls="reserva1">¿Dónde puedo reservar?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="pago1">¿Cómo pago?</button>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
                 <h3>¿Cómo funciona?</h3>
                 <p>Busca los hoteles de acuerdo a tu preferencia</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reservar">
                 <h3>¿Dónde puedo reservar?</h3>
                 <p>Elige la ciudad que te interese y luego realiza la reserva con tus datos</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <h3>¿Cómo pago?</h3>
                 <p>Utiliza tu tarjeta preferida</p>
             </div>
