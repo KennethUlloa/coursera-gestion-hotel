@@ -72,7 +72,7 @@
                 <img src="https://picsum.photos/id/78/200/200" class="card-img-top" alt="">
                 <div class="card-body">
                     
-                    <h4 class="card-title"><span class="badge bg-success">-20%</span> Hotel Río de Janerio</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Las primeras 100 personas se llevan 2 cocteles gratis!"><span class="badge bg-success">-20%</span> Hotel Río de Janerio</h4>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <button class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"></span> Reservar</button>
@@ -181,8 +181,12 @@
         </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!--script src="node_modules/popper.js/dist/popper.min.js"--></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!--script src="node_modules/popper.js/dist/umd/popper.min.js"></script-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        })
+    </script>
 </body>
 </html>
