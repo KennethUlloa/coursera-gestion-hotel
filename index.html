@@ -30,12 +30,16 @@
     </h1>
 
     <div class="container">
-        <img src="https://picsum.photos/id/164/1000/600" class="card-img-top mb-3" alt="">
+        
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">Hoteles</li>
             </ol>
         </nav>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>¡Temporada de playa!</strong> Aprovecha las ofertas especiales disponibles en diferentes destinos.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <div class="d-flex">
             <div class="col-sm-4">
                 <h3>¿Cómo funciona?</h3>
@@ -51,12 +55,13 @@
             </div>
         </div>
         <hr>
+        <img src="https://picsum.photos/id/164/1000/600" class="card-img-top mb-3" alt="">
         <div class="d-flex flex-wrap">
             <div class="card card-hotel p-0 m-2">
                 <img src="https://picsum.photos/id/78/200/200" class="card-img-top" alt="">
                 <div class="card-body">
                     
-                    <h4 class="card-title">Hotel Río de Janerio</h4>
+                    <h4 class="card-title"><span class="badge bg-success">-20%</span> Hotel Río de Janerio</h4>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <button class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"></span> Reservar</button>
@@ -64,7 +69,7 @@
             <div class="card card-hotel p-0 m-2">
                 <img src="https://picsum.photos/id/78/200/200" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Hotel Lima</h4>
+                    <h4 class="card-title"><span class="badge bg-success">-10%</span> Hotel Lima</h4>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
                 </div>
                 <button class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"></span> Reservar</button>
