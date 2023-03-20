@@ -69,13 +69,13 @@
         <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://picsum.photos/id/78/1000/600" alt="slide 1">
+                    <img src="https://picsum.photos/id/78/1000/600" alt="slide 1" class="w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/id/96/1000/600" alt="slide 2">
+                    <img src="https://picsum.photos/id/96/1000/600" alt="slide 2" class="w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/id/120/1000/600" alt="slide 3">
+                    <img src="https://picsum.photos/id/120/1000/600" alt="slide 3" class="w-100">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev"> 
@@ -143,7 +143,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Hotel La Paz</h4>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
-                    <button class="btn btn-outline-success" data-bs-target="#contacto" data-bs-toggle="modal">Contacto</button>
+                    <button class="btn btn-outline-success" data-bs-target="#contacto" data-bs-toggle="modal" id="contactoBtn">Contacto</button>
                 </div>
                 <button class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"></span> Reservar</button>
             </div>
@@ -209,7 +209,23 @@
             $('[data-bs-toggle="tooltip"]').tooltip();
             $('[data-bs-toggle="popover"]').popover();
             $('.carousel').carousel({interval: 1000});
-        })
+        });
+        $('#contacto').on('show.bs.modal', function(e) {
+            console.log('el modal se está mostrando');
+            $('#contactoBtn').removeClass('btn-outline-success').addClass('btn-primary');
+            $('#contactoBtn').prop('disabled', true);
+        });
+        $('#contacto').on('shown.bs.modal', function(e) {
+            console.log('el modal se mostró');
+        });
+        $('#contacto').on('hide.bs.modal', function(e) {
+            console.log('el modal se está ocultando');
+        });
+        $('#contacto').on('hidden.bs.modal', function(e) {
+            console.log('el modal se ocultó');
+            $('#contactoBtn').prop('disabled', false);
+            $('#contactoBtn').removeClass('btn-primary').addClass('btn-outline-success');
+        });
     </script>
 </body>
 </html>
